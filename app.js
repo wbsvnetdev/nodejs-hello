@@ -26,7 +26,7 @@ app.get("/", function(req, res){
   baseURL = "https://api.ipgeolocation.io/ipgeo?apiKey="
   ip=clientIp
   url = baseURL+process.env.API_KEY_IPGEO+"&ip="+ip
-  console.log(url)
+  
 
   request({url: url, json:true}, (error, response) => {
    
